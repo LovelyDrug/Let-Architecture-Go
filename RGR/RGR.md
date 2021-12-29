@@ -64,6 +64,22 @@ func BenchmarkPostfixExpressionCalculator(b *testing.B) {
 
 ## 2 завдання
 
+![](./img/task2/lab3_1.png)
+
+1. Користувач може використати метод GET  за адресою /virtualmachines
+2. Далі спрацьовує handler.HandlerFunc
+3. Далі сервер використовує store.VirtualMachinesList щоб звернутися до store
+4. Далі store надсилає запит до databse щоб отримати всі віртуальні машини.
+
+
+
+![](./img/task2/lab3_2.png)
+
+1. Користувач може використати метод POST  за адресою /virtualmachines
+2. Далі спрацьовує handler.HandlerFunc
+3. Далі сервер використовує store.AddDiskToMachine щоб звернутися до store
+4. Далі store надсилає запит до databse щоб змінити дані в базі.
+
 ## 3 завдання
 Для того, щоб підтвердити лінійний час роботи парсера команд, було підготовлено даний бенчмарк:
 
